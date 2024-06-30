@@ -1,13 +1,14 @@
-import "./index.scss";
+import style from "./index.module.css";
 import Layouts from "../../common/components/Layouts";
+import BannerSection from "./BannerSection";
 
 function Home () {
   return (
-    <div className="container">
-      <Layouts>
-        test
-      </Layouts>
-    </div>
+    <Layouts>
+      <div className={style.container}>
+        <BannerSection />
+      </div>
+    </Layouts>
   )
 }
 
