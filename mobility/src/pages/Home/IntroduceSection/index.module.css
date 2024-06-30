@@ -66,6 +66,10 @@
       word-break: keep-all;
       margin: 0 0 30px;
       display: block;
+
+      br {
+        display: none;
+      }
     }
   }
 
@@ -131,7 +135,10 @@
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 40px;
-        white-space: wrap;
+        
+        br {
+          display: block;
+        }
       }
     }
 

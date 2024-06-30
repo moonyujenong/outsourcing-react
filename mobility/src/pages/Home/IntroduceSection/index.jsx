@@ -23,7 +23,7 @@ function IntroduceSection () {
 
           <b>BIZAI - Customer</b>
 
-          <p>기존 시스템의 데이터를 기반으로 조회하고자 하는 내용을<br/>기능개발 없이 바로 확인 가능해요</p>
+          <p>기존 시스템의 데이터를 기반으로 조회하고자 하는 내용을<br/> 기능개발 없이 바로 확인 가능해요</p>
           <a href="#!" className={style.intro_link}>
             지금 해보세요
             <img alt="화살표" src={ThinArrow} />
