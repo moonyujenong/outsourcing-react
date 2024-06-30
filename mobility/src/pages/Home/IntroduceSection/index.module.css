@@ -94,6 +94,10 @@
     }
   }
 
+  .right {
+    width: 100%;
+  }
+
   @media screen  and (min-width:992px) {
     padding: 130px 0 126px;
 
@@ -115,7 +119,7 @@
 
       > img {
         height: 500px;
-        flex: 0 0 680px;
+        flex: 0 0 47%;
         border-radius: 20px;
       }
 
@@ -127,6 +131,7 @@
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 40px;
+        white-space: wrap;
       }
     }
 
