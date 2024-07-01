@@ -58,6 +58,11 @@ ul, ol {
   margin: 0;
 }
 
+input, select, form, button {
+  &:focus, &:active {
+    outline: 0;
+  }
+}
 
 @keyframes App-logo-spin {
   from {

@@ -1,0 +1,167 @@
+.container {
+  position: relative;
+  width: 100%;
+  
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    width: 100vw;
+    height: calc(100% + 70px);
+    transform: translate(-50vw, 0);
+    background-image: url(images/contact/qna_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .inner {
+    padding: 40px 0 50px;
+  }
+
+  .title {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .sub_title {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    word-break: keep-all;
+    margin: 0 0 40px;
+  }
+
+  .contact_form {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: relative;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact_body {
+    flex: 1;
+  }
+
+  .input_form {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #D4D4E8;
+    box-sizing: border-box;
+    padding: 12px 12px 12px 23px;
+    background-color: #F4F4FB;
+
+    input {
+      appearance: none;
+      border: 0;
+      flex: 1;
+      font-size: 18px;
+      font-weight: 400;
+      color: #111;
+      background-color: transparent;
+      padding-right: 16px;
+
+      &::placeholder {
+        color: #999;
+      }
+    }
+  }
+
+  .sent {
+    width: 36px;
+    height: 36px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .more {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto 0;
+    border-radius: 100px;
+    background-color: #474DE1;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding:22px 19px 16px 19px;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media screen and (min-width:992px) {
+    &:after {
+      height: calc(100% + 80px);
+      top: -80px;
+    }
+
+    .inner {
+      padding: 80px 0 70px;
+    }
+
+    .title {
+      font-size: 50px;
+    }
+
+    .sub_title {
+      font-size: 18px;
+      margin: 0 0 54px;
+      line-height: 30px;
+    }
+
+    .contact_form {
+      height: 650px;
+      border-radius: 40px;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+
+    .input_form {
+      border: 1px solid #D4D4E8;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 15px 15px 15px 20px;
+    }
+
+    .sent {
+      width: 40px;
+      height: 40px;
+    }
+
+    .more {
+      margin-top: 60px;
+      padding: 22px;
+      font-size: 18px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

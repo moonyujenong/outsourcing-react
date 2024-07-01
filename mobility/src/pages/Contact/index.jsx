@@ -1,10 +1,16 @@
 import style from "./index.module.css";
+import QnaSection from "./QnaSection";
+import Layouts from "../../common/components/Layouts";
+import ContactFormSection from "./ContactFormSection";
 
 function Contact () {
   return (
-    <div className={style.container}>
-      contact
-    </div>
+    <Layouts>
+      <div className={style.container}>
+        <QnaSection />
+        <ContactFormSection />
+      </div>
+    </Layouts>
   )
 }
 
