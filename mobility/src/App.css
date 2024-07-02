@@ -58,9 +58,27 @@ ul, ol {
   margin: 0;
 }
 
-input, select, form, button {
+input, select, form, button, textarea {
   &:focus, &:active {
     outline: 0;
+  }
+}
+
+input[type="text"] {
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+  height: 50px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.16px;
+  color: #111;
+
+  &::placeholder {
+    color: #999;
   }
 }
 
