@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/outsourcing-react/static/css/main.2ad75613.css",
-    "main.js": "/outsourcing-react/static/js/main.972badbe.js",
+    "main.js": "/outsourcing-react/static/js/main.8fac869a.js",
     "static/css/639.d82fbe68.chunk.css": "/outsourcing-react/static/css/639.d82fbe68.chunk.css",
     "static/js/639.5b3d1cf1.chunk.js": "/outsourcing-react/static/js/639.5b3d1cf1.chunk.js",
     "static/css/615.0704c1a5.chunk.css": "/outsourcing-react/static/css/615.0704c1a5.chunk.css",
@@ -37,7 +37,7 @@
     "static/media/icon-play.svg": "/outsourcing-react/static/media/icon-play.336d302519514d8138229230d34917c9.svg",
     "static/media/icon-check-white.svg": "/outsourcing-react/static/media/icon-check-white.9c82845e7a6ccc28dec9.svg",
     "main.2ad75613.css.map": "/outsourcing-react/static/css/main.2ad75613.css.map",
-    "main.972badbe.js.map": "/outsourcing-react/static/js/main.972badbe.js.map",
+    "main.8fac869a.js.map": "/outsourcing-react/static/js/main.8fac869a.js.map",
     "639.d82fbe68.chunk.css.map": "/outsourcing-react/static/css/639.d82fbe68.chunk.css.map",
     "639.5b3d1cf1.chunk.js.map": "/outsourcing-react/static/js/639.5b3d1cf1.chunk.js.map",
     "615.0704c1a5.chunk.css.map": "/outsourcing-react/static/css/615.0704c1a5.chunk.css.map",
@@ -47,6 +47,6 @@
   },
   "entrypoints": [
     "static/css/main.2ad75613.css",
-    "static/js/main.972badbe.js"
+    "static/js/main.8fac869a.js"
   ]
 }
