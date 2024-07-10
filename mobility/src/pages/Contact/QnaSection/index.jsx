@@ -14,7 +14,10 @@ function QnaSection () {
 
         <form action="" className={style.contact_form}>
           {/* TODO : 대화 내용이 들어갑니다. */}
-          <div className={style.contact_body}></div>
+          <div className={style.contact_body}>
+            <div className={style.left_message}>상대방 말풍선</div>
+            <div className={style.right_message}>본인 말풍선</div>
+          </div>
 
           <div className={style.input_form}>
             <input type="text" name="" id="" className={style.user_input} placeholder="메시지 BIZAI" />

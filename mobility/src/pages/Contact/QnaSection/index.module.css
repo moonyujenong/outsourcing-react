@@ -48,11 +48,64 @@
     position: relative;
     height: 560px;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
   }
-
+  
   .contact_body {
+    padding: 12px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+
+  .left_message,  
+  .right_message {
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    position: relative;
+    background-color: #e2e2e2;
+    padding: 6px 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    z-index: 5;
+    max-width: 800px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-bottom: 5px solid #e2e2e2;
+      border-top: 5px solid transparent;
+      border-left: 5px solid #e2e2e2;
+      border-right: 5px solid transparent;
+      border-radius: 2px;
+      position: absolute;
+      left: -5px;
+      top: 0;
+      z-index: -1;
+      transform: rotate(190deg);
+    }
+  }
+
+  .right_message {
+    align-self: flex-end;
+    background-color: #474DE1;
+    color: #fff;
+
+    &::after {
+      border-left: 5px solid #474DE1;
+      border-bottom: 5px solid #474DE1;
+      right: -4px;
+      left: inherit;
+      transform: rotate(80deg);
+    }
   }
 
   .input_form {
@@ -113,6 +166,10 @@
   }
 
   @media screen and (min-width:992px) {
+    .contact_body {
+      padding: 0 3px 30px;
+    }
+
     &:after {
       height: calc(100% + 80px);
       top: -80px;
@@ -163,6 +220,12 @@
         width: 20px;
         height: 20px;
       }
+    }
+
+    .left_message,  
+    .right_message {
+      font-size: 16px;
+      padding: 8px 12px;
     }
   }
 }
