@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   overflow-y: auto;
+  z-index: 100;
 
   .inner {
     background-color: #F5F7FC;
