@@ -55,6 +55,12 @@ html, body, #root, .container {
 body {
   overflow-x: hidden;
   overflow-y: auto;
+  -ms-overflow-style: none; 
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
 }
 
 ul, ol {
