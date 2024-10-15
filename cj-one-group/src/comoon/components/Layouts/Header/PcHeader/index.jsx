@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import style from "./index.module.css";
 import logo from "../../../../../assets/images/logo.svg";
 import shapeIcon from "../../../../../assets/images/icon-shape.svg";
@@ -86,6 +86,8 @@ function PcHeader () {
     },
   ]
 
+  const location = useLocation();
+
   const [isLnbOpen, setIsLnbOpen] = useState(false);
   const handleLnbOpen = () => {
     setIsLnbOpen(!isLnbOpen)
@@ -101,7 +103,7 @@ function PcHeader () {
         <ul className={style.menu_list}>
           {menuList.map((item) => (
             <li key={item.id}>
-              <Link to={item.location}>{item.name}</Link>
+              <Link to={item.location} className={location.pathname === item.location && style.border}>{item.name}</Link>
             </li>
           ))}
         </ul>
@@ -118,7 +120,7 @@ function PcHeader () {
             <ul className={style.menu_list}>
               {menuList.map((item) => (
                 <li key={item.id}>
-                  <Link to={item.location}>{item.name}</Link>
+                  <Link to={item.location} className={location.pathname === item.location && style.border}>{item.name}</Link>
                   <ul className={style.depth_menu}>
                     {item.twoDepthMenu.map((item2) => (
                       <li key={item2.id}>

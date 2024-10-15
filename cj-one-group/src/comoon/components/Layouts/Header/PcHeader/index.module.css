@@ -37,7 +37,21 @@
       line-height: normal;
       letter-spacing: 0.36px;
       color: #BADCD3;
+      position: relative;
+
+      &.border {
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 2px;
+          background-color: #043D2F;
+          position: absolute;
+          bottom: -8px;
+        }
+      }
     }
+
   }
 
   .lnb {
@@ -62,6 +76,20 @@
         color: #043D2F;
         margin-bottom: 28px;
         display: block;
+        position: relative;
+        width: fit-content;
+
+        &.border {
+          &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #043D2F;
+            position: absolute;
+            bottom: -8px;
+          }
+        }
       }
     }
   }
