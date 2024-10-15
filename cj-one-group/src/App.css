@@ -96,6 +96,10 @@ input[type="text"] {
   }
 }
 
+p, h1 ~ h6 {
+  margin: 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
