@@ -5,16 +5,15 @@
   .inner {
     padding: 22px 16px 29px;
     box-sizing: border-box;
-    height: 405px;
   }
 
   .flex_wrap {
     display: flex;
     flex-direction: column;
-    gap: 148px;
+    gap: 149px;
 
     img {
-      width: 142px;
+      width: 143px;
       display: block;
     }
   }
@@ -43,8 +42,7 @@
   @media screen and (min-width:1024px) {
     
     .inner {
-      height: 444px;
-      padding: 34px 49px;
+      padding: 34px 49px 250px;
     }
 
     .flex_wrap {

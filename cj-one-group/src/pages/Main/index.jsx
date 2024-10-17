@@ -2,8 +2,15 @@ import style from "./index.module.css";
 import Layouts from "../../comoon/components/Layouts";
 import visualImg from "../../assets/images/main/main-visual-img.png";
 import Slides from "./Slides";
+import useResponsive from "../../comoon/hook/Responsive";
+import section2Pc from "../../assets/images/main/main-essence-bg-pc.png";
+import Lookbook from "./Lookbook";
+import bottomImg1 from "../../assets/images/main/bottom-img-1.png";
+import bottomImg2 from "../../assets/images/main/bottom-img-2.png";
+import bottomImg3 from "../../assets/images/main/bottom-img-3.png";
 
 function Main () {
+  const innerWidth = useResponsive();
   return (
     <Layouts>
       <div className={style.container}>
@@ -20,6 +27,23 @@ function Main () {
         </div>
 
         <Slides />
+        <section className={style.second_section}>
+          <img alt="section bg" src={section2Pc} />
+          <div className={style.text_box}>
+            <h3 className={style.title}>BRAND ESSENCE</h3>
+            <p>We maintain stable brand operations through strict principles and standards, ensuring consistent quality and service for our customers. We prioritize customer trust, placing the highest importance on people-centered values, and strive to deliver a consistently satisfying experience.</p>
+          </div>
+        </section>
+
+        <Lookbook />
+        <section className={style.end_section}>
+          <div className={style.img_wrap}>
+            <img alt="bottom img 1" src={bottomImg1} />
+            <img alt="bottom img 2" src={bottomImg2} />
+            <img alt="bottom img 3" src={bottomImg3} />
+          </div>
+          <p>The essence of korean cuisine</p>
+        </section>
       </div>
     </Layouts>
   )
