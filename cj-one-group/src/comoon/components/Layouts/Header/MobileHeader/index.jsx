@@ -22,7 +22,7 @@ function MobileHeader () {
     {
       id:1,
       name:'ONE SPIRIT',
-      location:'/oneSpirit'
+      location:'/about'
     },
     {
       id:2,

@@ -33,7 +33,7 @@ function Lookbook () {
             <h3 className={style.title}>LOOKBOOK</h3>
             <ul className={style.lookbook_list}>
                 {loobookList.map((item) => (
-                    <li>
+                    <li key={item.id}>
                         <p>{item.number}</p>
                         <div className={style.right}>
                             <span>{item.title}</span>

@@ -10,7 +10,7 @@ function PcHeader () {
     {
       id:0,
       name:'ONE SPIRIT',
-      location:'/oneSpirit',
+      location:'/about',
       twoDepthMenu:[
         {
           id:0,
@@ -96,14 +96,21 @@ function PcHeader () {
   return (
     <div className={style.container}>
       <div className={style.inner} onClick={handleLnbOpen}>
+        {location.pathname === '/about' || location.pathname === '/peoeple' ? 
+        <Link to={'/'} className={style.logo}>
+          <img alt="logo" src={logoFill} />
+        </Link>
+        : 
         <Link to={'/'} className={style.logo}>
           <img alt="logo" src={logo} />
         </Link>
+        }
+        
 
         <ul className={style.menu_list}>
           {menuList.map((item) => (
             <li key={item.id}>
-              <Link to={item.location} className={location.pathname === item.location && style.border}>{item.name}</Link>
+              <Link to={item.location} className={`${location.pathname === item.location && style.border} ${location.pathname === '/about' || location.pathname === '/peoeple' ? style.changeColor : ''}`}>{item.name}</Link>
             </li>
           ))}
         </ul>
