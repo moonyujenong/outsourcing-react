@@ -1,4 +1,7 @@
 .container {
+    padding-bottom: 118px;
+    background-color: #EBEAE5;
+    overflow: hidden;
     .visual_banner {
         position: relative;
 
@@ -37,7 +40,6 @@
     .mission_section {
         text-align: center;
         padding: 48px 16px 55px;
-        background-color: #EBEAE5;
 
         .title {
             font-size: 18px;
@@ -75,7 +77,6 @@
     }
 
     .guide_line {
-        background-color: #EBEAE5;
         padding-bottom: 40px;
 
         img {
@@ -85,7 +86,6 @@
     }
 
     .tagline_section {
-        background-color: #EBEAE5;
         padding: 60px;
         text-align: center;
 
@@ -137,7 +137,143 @@
         }
     }
 
+    .story_section {
+        position: relative;
+
+        img {
+            width: 100%;
+            min-height: 650px;
+            max-height: 1000px;
+            object-fit: cover;
+            object-position: 31%;
+            display: block;
+        }
+
+        .text_box {
+            position: absolute;
+            top: 35px;
+
+            > h3 {
+                color: #043D2F;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.36px;
+                display: block;
+                margin-bottom: 40px;
+                padding: 0 30px;
+            }
+        }
+
+        .flex_box {
+            display: grid;
+            gap: 11px;
+            padding: 0 30px;
+
+            h3 {
+                font-size: 32px;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: -1.6px;
+                color: #043D2F;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 19px;
+                color: #043D2F;
+            }
+        }
+    }    
+
+    .comments_section {
+        .inner {
+            padding: 40px 16px 80px;
+            display: grid;
+            gap: 80px;
+            box-sizing: border-box;
+        }
+    }
+
+    .comments_item {
+        text-align: center;
+        display: grid;
+
+        > img {
+            width: 83px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            margin: 0 auto 35px;
+            display: block;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 100%;
+            letter-spacing: -1.6px;
+            color: #043D2F;
+            margin-bottom: 20px;
+
+            b {
+                font-weight: 600;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 19px;
+            color: #274D44;
+        }
+    }
+
+    .slogan_section {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+        width: 100%;
+
+        img {
+            width: 100%;
+            max-width: 1000px;
+            min-width: 475px;
+        }
+
+        .text_box {
+            position: absolute;
+            bottom: 0;
+            left: 12%;
+            /* left: 50%; */
+            /* transform: translateX(-50%); */
+            text-align: center;
+            width: fit-content;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.36px;
+                color: #043D2F;
+                margin-bottom: 20px;
+                display: block;
+            }
+
+            p {
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 32px; /* 32px */
+                letter-spacing: -0.64px;
+                color: #043D2F;
+            }
+        }
+    }
+
     @media screen and (min-width:1024px) {
+        padding-bottom: 305px;
+
         .visual_banner {
             img {
                 max-height: 1000px;
@@ -235,6 +371,88 @@
             span {
                 p {
                     display: none;
+                }
+            }
+        }
+
+        .story_section {
+            img {
+                object-position: initial;
+            }
+
+            .text_box {
+                top: 63px;
+                > h3 {
+                    font-size: 24px;
+                    margin-bottom: 16px;
+                    padding: 0 72px;
+                }
+
+                .flex_box {
+                    display: flex;
+                    gap: 115px;
+                    align-items: flex-start;
+                    padding: 0 72px;
+
+                    h3 {
+                        font-size: 64px;
+                        letter-spacing: -3.2px;
+                    }
+
+                    p {
+                        max-width: 457px;
+                        font-size: 15px;
+                        line-height: 21px;
+                        position: relative;
+                        top: 13px;
+                    }
+                }
+            }
+        }
+
+        .comments_section {
+            .inner {
+                padding: 108px 16px 125px;
+                grid-template-columns: repeat(3, 1fr);
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 1428px;
+                margin: 0 auto;
+                gap: 58px 145px;
+            }
+        }
+        
+
+        .comments_item {
+            > img {
+                margin-bottom: 48px;
+            }
+
+            .title {
+                margin-bottom: 35px;
+            }
+            p {
+                font-size: 15px;
+                line-height: 21px;
+            }
+        }
+
+        .slogan_section  {
+            width: fit-content;
+
+            .text_box {
+                left: 15%;
+                bottom: 6%;
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 14px;
+                    letter-spacing: -0.48px;
+                }
+                p {
+                    font-size: 45px;
+                    letter-spacing: -0.9px;
+                    line-height: 49px;
                 }
             }
         }

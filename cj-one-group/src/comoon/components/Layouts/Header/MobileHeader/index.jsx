@@ -3,7 +3,9 @@ import style from "./index.module.css";
 import logo from "../../../../../assets/images/logo.svg";
 import closeIcon from "../../../../../assets/images/icon-close.svg";
 import hamburgerIcon from "../../../../../assets/images/icon-hamburger.svg";
-import shapeIcon from "../../../../../assets/images/icon-shape.svg"
+import shapeIcon from "../../../../../assets/images/icon-shape.svg";
+import logoFill from "../../../../../assets/images/logo-fill.svg";
+import hamburgerFillIcon from "../../../../../assets/images/icon-hamburger-fill.svg"
 import { useState } from 'react';
 
 function MobileHeader () {
@@ -39,12 +41,25 @@ function MobileHeader () {
   return (
     <div className={style.container}>
       <div className={style.inner}>
-        <Link to={'/'} className={style.logo}>
-          <img alt='logo' src={logo} />
-        </Link>
-        <button type="button" className={style.open_btn} onClick={handleLnbOpen}>
-          <img alt='hamburger icon' src={hamburgerIcon} />
-        </button>
+      {location.pathname === '/about' || location.pathname === '/peoeple' ? 
+        <>
+          <Link to={'/'} className={style.logo}>
+            <img alt="logo" src={logoFill} />
+          </Link>
+          <button type="button" className={style.open_btn} onClick={handleLnbOpen}>
+            <img alt='hamburger icon' src={hamburgerFillIcon} />
+          </button>
+        </>
+        : 
+        <>
+          <Link to={'/'} className={style.logo}>
+            <img alt="logo" src={logo} />
+          </Link>
+          <button type="button" className={style.open_btn} onClick={handleLnbOpen}>
+            <img alt='hamburger icon' src={hamburgerIcon} />
+          </button>
+        </>
+        }
       </div>
 
       <div className={`${style.lnb} ${isLnbOpen === true ? style.open : ''}`}>
