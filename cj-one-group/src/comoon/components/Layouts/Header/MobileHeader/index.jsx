@@ -33,8 +33,8 @@ function MobileHeader () {
     },
     {
       id:3,
-      name:'PEOEPLE',
-      location:'/peoeple'
+      name:'PEOPLE',
+      location:'/people'
     },
   ]
 

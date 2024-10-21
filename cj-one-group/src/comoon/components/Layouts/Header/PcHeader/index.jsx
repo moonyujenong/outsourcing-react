@@ -67,8 +67,8 @@ function PcHeader () {
     },
     {
       id:2,
-      name:'PEOEPLE',
-      location:'/peoeple',
+      name:'PEOPLE',
+      location:'/people',
       twoDepthMenu:[
         {
           id:0,
