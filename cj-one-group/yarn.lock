@@ -7952,7 +7952,7 @@ react-scripts@5.0.1:
 
 react-scroll-parallax@^3.4.5:
   version "3.4.5"
-  resolved "https://registry.npmjs.org/react-scroll-parallax/-/react-scroll-parallax-3.4.5.tgz"
+  resolved "https://registry.yarnpkg.com/react-scroll-parallax/-/react-scroll-parallax-3.4.5.tgz#397fd8870734f693d5ffe4dc5d3d6f7af9985d67"
   integrity sha512-4NLZQ8cZEUyxoA95DfrXWneOOUSFrFmpM0dZNzMErmuJ0LzY+CCw8Xw0hqB6xxHWxNknfs46AozyIPSWkZeucA==
   dependencies:
     parallax-controller "^1.7.1"
