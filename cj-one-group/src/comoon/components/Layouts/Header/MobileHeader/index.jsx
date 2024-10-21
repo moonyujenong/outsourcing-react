@@ -41,7 +41,7 @@ function MobileHeader () {
   return (
     <div className={style.container}>
       <div className={style.inner}>
-      {location.pathname === '/about' || location.pathname === '/peoeple' ? 
+      {location.pathname === '/about' || location.pathname === '/people' ? 
         <>
           <Link to={'/'} className={style.logo}>
             <img alt="logo" src={logoFill} />
