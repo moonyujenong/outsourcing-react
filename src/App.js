@@ -8,10 +8,11 @@ const Contact = lazy(() => import("./pages/Contact"))
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}> 
       <Routes>
         <>
           <Route path="/" element={<Home />} /> 
+          ?
           <Route path="/contact" element={<Contact />} /> 
         </>
       </Routes>
