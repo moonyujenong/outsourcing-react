@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/outsourcing-react/static/css/main.2ad75613.css",
-    "main.js": "/outsourcing-react/static/js/main.8fac869a.js",
-    "static/css/639.d82fbe68.chunk.css": "/outsourcing-react/static/css/639.d82fbe68.chunk.css",
-    "static/js/639.5b3d1cf1.chunk.js": "/outsourcing-react/static/js/639.5b3d1cf1.chunk.js",
-    "static/css/615.0704c1a5.chunk.css": "/outsourcing-react/static/css/615.0704c1a5.chunk.css",
-    "static/js/615.42aff0eb.chunk.js": "/outsourcing-react/static/js/615.42aff0eb.chunk.js",
+    "main.css": "/outsourcing-react/static/css/main.4a5ef72a.css",
+    "main.js": "/outsourcing-react/static/js/main.09a78c20.js",
+    "static/css/639.7bab9027.chunk.css": "/outsourcing-react/static/css/639.7bab9027.chunk.css",
+    "static/js/639.cf0c9c8d.chunk.js": "/outsourcing-react/static/js/639.cf0c9c8d.chunk.js",
+    "static/css/615.969ff7dd.chunk.css": "/outsourcing-react/static/css/615.969ff7dd.chunk.css",
+    "static/js/615.12c37d8e.chunk.js": "/outsourcing-react/static/js/615.12c37d8e.chunk.js",
     "static/js/453.73240c1f.chunk.js": "/outsourcing-react/static/js/453.73240c1f.chunk.js",
-    "static/js/695.d9033bf2.chunk.js": "/outsourcing-react/static/js/695.d9033bf2.chunk.js",
+    "static/js/695.cd19c3bb.chunk.js": "/outsourcing-react/static/js/695.cd19c3bb.chunk.js",
     "static/media/sample-banner.png": "/outsourcing-react/static/media/sample-banner.5627755b02d76c36b92e.png",
     "static/media/qna_bg.png": "/outsourcing-react/static/media/qna_bg.9567ddf49417ca445541.png",
     "static/media/sample-img.png": "/outsourcing-react/static/media/sample-img.e75c4773093935ab607f.png",
@@ -36,17 +36,17 @@
     "static/media/icon-hamburger.svg": "/outsourcing-react/static/media/icon-hamburger.f728cb63dfe3cfc28b1d1c7ecd9fd765.svg",
     "static/media/icon-play.svg": "/outsourcing-react/static/media/icon-play.336d302519514d8138229230d34917c9.svg",
     "static/media/icon-check-white.svg": "/outsourcing-react/static/media/icon-check-white.9c82845e7a6ccc28dec9.svg",
-    "main.2ad75613.css.map": "/outsourcing-react/static/css/main.2ad75613.css.map",
-    "main.8fac869a.js.map": "/outsourcing-react/static/js/main.8fac869a.js.map",
-    "639.d82fbe68.chunk.css.map": "/outsourcing-react/static/css/639.d82fbe68.chunk.css.map",
-    "639.5b3d1cf1.chunk.js.map": "/outsourcing-react/static/js/639.5b3d1cf1.chunk.js.map",
-    "615.0704c1a5.chunk.css.map": "/outsourcing-react/static/css/615.0704c1a5.chunk.css.map",
-    "615.42aff0eb.chunk.js.map": "/outsourcing-react/static/js/615.42aff0eb.chunk.js.map",
+    "main.4a5ef72a.css.map": "/outsourcing-react/static/css/main.4a5ef72a.css.map",
+    "main.09a78c20.js.map": "/outsourcing-react/static/js/main.09a78c20.js.map",
+    "639.7bab9027.chunk.css.map": "/outsourcing-react/static/css/639.7bab9027.chunk.css.map",
+    "639.cf0c9c8d.chunk.js.map": "/outsourcing-react/static/js/639.cf0c9c8d.chunk.js.map",
+    "615.969ff7dd.chunk.css.map": "/outsourcing-react/static/css/615.969ff7dd.chunk.css.map",
+    "615.12c37d8e.chunk.js.map": "/outsourcing-react/static/js/615.12c37d8e.chunk.js.map",
     "453.73240c1f.chunk.js.map": "/outsourcing-react/static/js/453.73240c1f.chunk.js.map",
-    "695.d9033bf2.chunk.js.map": "/outsourcing-react/static/js/695.d9033bf2.chunk.js.map"
+    "695.cd19c3bb.chunk.js.map": "/outsourcing-react/static/js/695.cd19c3bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ad75613.css",
-    "static/js/main.8fac869a.js"
+    "static/css/main.4a5ef72a.css",
+    "static/js/main.09a78c20.js"
   ]
 }
