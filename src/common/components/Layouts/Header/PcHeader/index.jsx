@@ -3,12 +3,10 @@ import Logo from "images/common/logo.svg";
 import Global from "images/common/icon-global.svg";
 import { menuList } from "../menu";
 import { useEffect, useState } from "react";
-import { useLocation } from 'react-router-dom';
 
 function PcHeader () {
   const [isOpenLang, setIsOpenLang] = useState(false);
   const [scroll, setScroll] = useState(false);
-  const location = useLocation();
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
