@@ -152,6 +152,7 @@
             height: calc((100vw * 800) / 1920);
             max-height: 800px;
             border-radius: 15px;
+            height: 100%;
 
             img {
                 transform: initial;
@@ -162,6 +163,7 @@
             order: 1;
             gap: 155px;
             padding-top: 23px;
+            min-height: calc(650px - 23px);
 
             h3 {
                 font-size: 45px;

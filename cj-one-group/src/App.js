@@ -5,7 +5,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 const Main = lazy(() => import("./pages/Main"));
 const About = lazy(() => import("./pages/About"));
-const Brunch = lazy(() => import("./pages/Brunch"));
+const Branch = lazy(() => import("./pages/Branch"));
 const People = lazy(() => import("./pages/People"));
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} /> 
             <Route path="/about" element={<About />} />
-            <Route path="/branch" element={<Brunch />} />
+            <Route path="/branch" element={<Branch />} />
             <Route path="/people" element={<People />} />
           </Routes>
         </Suspense>

@@ -1,7 +1,7 @@
 import style from "./index.module.css";
 import Layouts from '../../comoon/components/Layouts';
-import visualImg from "../../assets/images/about/visual-banner-mobile.png";
-import visualImgPc from "../../assets/images/about/visual-banner-pc.png";
+// import visualImg from "../../assets/images/about/visual-banner-mobile.png";
+// import visualImgPc from "../../assets/images/about/visual-banner-pc.png";
 import useResponsive from "../../comoon/hook/Responsive";
 import visualImgTest from "../../assets/images/about/about-visual-banner.png";
 import missionImg1 from "../../assets/images/about/mission-img-1.png";
@@ -22,6 +22,7 @@ import cLogo4 from "../../assets/images/about/c-logo-4.svg";
 import cLogo5 from "../../assets/images/about/c-logo-5.svg";
 import cLogo6 from "../../assets/images/about/c-logo-6.svg";
 import sloganImg from "../../assets/images/about/slogan-img.png";
+import ShapeImg from "../../comoon/components/ShapeImg";
 
 function About () {
     const innerWidth = useResponsive();
@@ -153,14 +154,8 @@ function About () {
                         ))}
                     </div>
                 </div>
-
-                <div className={style.slogan_section}>
-                    <img alt="slogan img" src={sloganImg} />
-                    <div className={style.text_box}>
-                        <h3>BRAND SLOGAN</h3>
-                        <p>True Flavors Stay<br />In Your Memory</p>
-                    </div>
-                </div>
+               
+               <ShapeImg imgSrc={sloganImg} title={'BRAND SLOGAN'} subTitle={`True Flavors Stay\nIn Your Memory`} />
             </div>
         </Layouts>
     )

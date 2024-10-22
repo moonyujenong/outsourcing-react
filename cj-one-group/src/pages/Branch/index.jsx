@@ -1,16 +1,16 @@
 import Layouts from "../../comoon/components/Layouts";
 import style from "./index.module.css";
-import visualBanner from "../../assets/images/brunch/brunch-visual-banner.png";
-import { brunchData } from "./data";
+import visualBanner from "../../assets/images/branch/branch-visual-banner.png";
+import { branchData } from "./data";
 import { useRef } from "react";
 
-function Brunch () {
+function Branch () {
     const scrollRef = useRef([]);
     const scrollToSection = (index) => {
         scrollRef.current[index].scrollIntoView({ behavior: 'smooth' });
       };
 
-    const brunchSectionList = [
+    const branchSectionList = [
         {
             id:0,
             name:'Chungdam',
@@ -39,14 +39,14 @@ function Brunch () {
                 <div className={style.visual_banner}>
                     <img alt="visual img" src={visualBanner} />
                     <ul className={style.section_list}>
-                        {brunchSectionList.map((item, index) => (
+                        {branchSectionList.map((item, index) => (
                             <li key={index} onClick={() => scrollToSection(index)} className={index === 0 ? style.active : ''}>{item.name}</li>
                         ))}
                     </ul>
                 </div>
 
                 <div className={style.brunch_list}>
-                    {brunchData.map((item, index) => (
+                    {branchData.map((item, index) => (
                         <div className={style.items} key={item.id} ref={(el) => (scrollRef.current[index] = el)}>
                             <div className={style.left}>
                                 <div className={style.names}>
@@ -71,4 +71,4 @@ function Brunch () {
     )
 }
 
-export default Brunch;
+export default Branch;

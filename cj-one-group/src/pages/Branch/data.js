@@ -1,8 +1,8 @@
-import img1 from "../../assets/images/brunch/brunch-img-1.png";
-import img2 from "../../assets/images/brunch/brunch-img-2.png";
-import img3 from "../../assets/images/brunch/brunch-img-3.png";
+import img1 from "../../assets/images/branch/branch-img-1.png";
+import img2 from "../../assets/images/branch/branch-img-2.png";
+import img3 from "../../assets/images/branch/branch-img-3.png";
 
-export const brunchData = [
+export const branchData = [
     {
         id:0,
         area:'chungdam',
